@@ -1,0 +1,16 @@
+{
+    "files.associations": {
+        "led.h": "c",
+        "oled.h": "c",
+        "main.h": "c",
+        "stdlib.h": "c",
+        "datatype.h": "c",
+        "keyone.h": "c",
+        "stm32f10x_conf.h": "c",
+        "random.h": "c",
+        "stdio.h": "c",
+        "lednew.h": "c",
+        "nvic.h": "c",
+        "systick.h": "c"
+    }
+}
