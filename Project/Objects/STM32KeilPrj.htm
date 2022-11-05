@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Objects\STM32KeilPrj.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Objects\STM32KeilPrj.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sat Nov 05 11:17:54 2022
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060960: Last Updated: Sat Nov 05 15:54:40 2022
 <BR><P>
 <H3>Maximum Stack Usage =        136 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -306,7 +306,7 @@ Global Symbols
 <P><STRONG><a name="[b9]"></a>__aeabi_memcpy</STRONG> (Thumb, 36 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
 
 <P><STRONG><a name="[b1]"></a>__aeabi_memcpy4</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text))
-<BR><BR>[Called By]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa
+<BR><BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa
 </UL>
 
 <P><STRONG><a name="[ba]"></a>__aeabi_memcpy8</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, memcpya.o(.text), UNUSED)
@@ -416,20 +416,21 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameProcess
 </UL>
 
-<P><STRONG><a name="[73]"></a>GameProcess</STRONG> (Thumb, 330 bytes, Stack size 24 bytes, game.o(i.GameProcess))
+<P><STRONG><a name="[73]"></a>GameProcess</STRONG> (Thumb, 368 bytes, Stack size 24 bytes, game.o(i.GameProcess))
 <BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = GameProcess &rArr; EnemyMove &rArr; OLEDShowString &rArr; OLEDShowChar &rArr; OLEDDrawPoint
 </UL>
-<BR>[Calls]<UL><LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
-<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LEDSelector
-<LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa
-<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerShow
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerCrash
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MapMove
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
+<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rand
+<LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LEDSelector
+<LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;itoa
+<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerShow
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerCrash
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MapMove
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameOverEffect
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnemyMove
-<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDShowStringBySize12
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDShowStringBySize12
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDShowString
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Proc2msTask
 </UL>
@@ -445,12 +446,12 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
-<P><STRONG><a name="[7c]"></a>InitGame</STRONG> (Thumb, 88 bytes, Stack size 8 bytes, game.o(i.InitGame))
+<P><STRONG><a name="[7d]"></a>InitGame</STRONG> (Thumb, 90 bytes, Stack size 8 bytes, game.o(i.InitGame))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = InitGame &rArr; OLEDShowString &rArr; OLEDShowChar &rArr; OLEDDrawPoint
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
+<BR>[Calls]<UL><LI><a href="#[74]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;srand
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDShowString
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
@@ -523,7 +524,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerMove
 <LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerFire
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Proc2msTask
 </UL>
@@ -547,7 +548,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitHardware
 </UL>
 
-<P><STRONG><a name="[75]"></a>LEDSelector</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, lednew.o(i.LEDSelector))
+<P><STRONG><a name="[76]"></a>LEDSelector</STRONG> (Thumb, 100 bytes, Stack size 8 bytes, lednew.o(i.LEDSelector))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = LEDSelector
 </UL>
 <BR>[Calls]<UL><LI><a href="#[92]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LEDSet
@@ -558,10 +559,10 @@ Global Symbols
 <P><STRONG><a name="[92]"></a>LEDSet</STRONG> (Thumb, 42 bytes, Stack size 0 bytes, lednew.o(i.LEDSet))
 <BR><BR>[Calls]<UL><LI><a href="#[91]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GPIO_WriteBit
 </UL>
-<BR>[Called By]<UL><LI><a href="#[75]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LEDSelector
+<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LEDSelector
 </UL>
 
-<P><STRONG><a name="[7a]"></a>MapMove</STRONG> (Thumb, 110 bytes, Stack size 32 bytes, game.o(i.MapMove))
+<P><STRONG><a name="[7b]"></a>MapMove</STRONG> (Thumb, 110 bytes, Stack size 32 bytes, game.o(i.MapMove))
 <BR><BR>[Stack]<UL><LI>Max Depth = 40<LI>Call Chain = MapMove &rArr; OLEDDrawPointForMap
 </UL>
 <BR>[Calls]<UL><LI><a href="#[72]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDDrawPointForMap
@@ -596,7 +597,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDRefreshGRAM
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDShowStringBySize12
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDShowStringBySize12
 <LI><a href="#[84]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitOLED
 </UL>
 
@@ -604,7 +605,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = OLEDDrawPointForMap
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerFire
-<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MapMove
+<LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;MapMove
 <LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameOverEffect
 </UL>
 
@@ -614,7 +615,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDWriteByte
 </UL>
 <BR>[Called By]<UL><LI><a href="#[8f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerFire
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerCrash
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerCrash
 <LI><a href="#[89]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDClear
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Proc2msTask
 </UL>
@@ -624,7 +625,7 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[95]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDDrawPoint
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDShowStringBySize12
+<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDShowStringBySize12
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDShowString
 </UL>
 
@@ -633,15 +634,15 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDShowChar
 </UL>
-<BR>[Called By]<UL><LI><a href="#[76]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerShow
+<BR>[Called By]<UL><LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerShow
 <LI><a href="#[90]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerMove
-<LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerCrash
+<LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerCrash
 <LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EnemyMove
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitGame
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitGame
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameProcess
 </UL>
 
-<P><STRONG><a name="[7b]"></a>OLEDShowStringBySize12</STRONG> (Thumb, 62 bytes, Stack size 24 bytes, oled.o(i.OLEDShowStringBySize12))
+<P><STRONG><a name="[7c]"></a>OLEDShowStringBySize12</STRONG> (Thumb, 62 bytes, Stack size 24 bytes, oled.o(i.OLEDShowStringBySize12))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = OLEDShowStringBySize12 &rArr; OLEDClear &rArr; OLEDRefreshGRAM &rArr; OLEDWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[94]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDShowChar
@@ -653,12 +654,12 @@ Global Symbols
 <P><STRONG><a name="[8]"></a>PendSV_Handler</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, stm32f10x_it.o(i.PendSV_Handler))
 <BR>[Address Reference Count : 1]<UL><LI> startup_stm32f10x_hd.o(RESET)
 </UL>
-<P><STRONG><a name="[79]"></a>PlayerCrash</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, game.o(i.PlayerCrash))
+<P><STRONG><a name="[7a]"></a>PlayerCrash</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, game.o(i.PlayerCrash))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = PlayerCrash &rArr; OLEDShowString &rArr; OLEDShowChar &rArr; OLEDDrawPoint
 </UL>
 <BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDShowString
 <LI><a href="#[93]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDRefreshGRAM
-<LI><a href="#[77]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
+<LI><a href="#[78]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2printf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameProcess
 </UL>
@@ -681,7 +682,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyFunction
 </UL>
 
-<P><STRONG><a name="[76]"></a>PlayerShow</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, game.o(i.PlayerShow))
+<P><STRONG><a name="[77]"></a>PlayerShow</STRONG> (Thumb, 44 bytes, Stack size 0 bytes, game.o(i.PlayerShow))
 <BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = PlayerShow &rArr; OLEDShowString &rArr; OLEDShowChar &rArr; OLEDDrawPoint
 </UL>
 <BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OLEDShowString
@@ -901,12 +902,12 @@ Global Symbols
 
 <P><STRONG><a name="[bd]"></a>__1printf$6</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf6.o(i.__0printf$6), UNUSED)
 
-<P><STRONG><a name="[77]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf6.o(i.__0printf$6))
+<P><STRONG><a name="[78]"></a>__2printf</STRONG> (Thumb, 0 bytes, Stack size 24 bytes, printf6.o(i.__0printf$6))
 <BR><BR>[Stack]<UL><LI>Max Depth = 24<LI>Call Chain = __2printf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[79]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerCrash
+<BR>[Called By]<UL><LI><a href="#[7a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PlayerCrash
 <LI><a href="#[8e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KeyFunction
-<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitGame
+<LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitGame
 <LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameProcess
 </UL>
 
@@ -923,7 +924,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> printf6.o(i.__0printf$6)
 </UL>
-<P><STRONG><a name="[74]"></a>itoa</STRONG> (Thumb, 118 bytes, Stack size 56 bytes, game.o(i.itoa))
+<P><STRONG><a name="[75]"></a>itoa</STRONG> (Thumb, 118 bytes, Stack size 56 bytes, game.o(i.itoa))
 <BR><BR>[Stack]<UL><LI>Max Depth = 56<LI>Call Chain = itoa
 </UL>
 <BR>[Calls]<UL><LI><a href="#[b1]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
@@ -934,20 +935,19 @@ Global Symbols
 <P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 14 bytes, Stack size 0 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = main &rArr; Proc2msTask &rArr; GameProcess &rArr; EnemyMove &rArr; OLEDShowString &rArr; OLEDShowChar &rArr; OLEDDrawPoint
 </UL>
-<BR>[Calls]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitGame
+<BR>[Calls]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitGame
 <LI><a href="#[97]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Proc2msTask
 <LI><a href="#[7e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitHardware
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[78]"></a>rand</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, random.o(i.rand))
+<P><STRONG><a name="[79]"></a>rand</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, random.o(i.rand))
 <BR><BR>[Called By]<UL><LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameProcess
 </UL>
 
-<P><STRONG><a name="[7d]"></a>srand</STRONG> (Thumb, 38 bytes, Stack size 8 bytes, random.o(i.srand))
-<BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = srand
-</UL>
-<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitGame
+<P><STRONG><a name="[74]"></a>srand</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, random.o(i.srand))
+<BR><BR>[Called By]<UL><LI><a href="#[7d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitGame
+<LI><a href="#[73]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;GameProcess
 </UL>
 <P>
 <H3>

@@ -77,9 +77,9 @@ void KeyFunction(void)
             else if (PressKey == 2)
             {
                 if (PlayerFire(PlayerLocation))
-                    printf("[Younger] You press FIRE! You STILL have %d ammo(s)\n", Bullet);
+                    printf("You press FIRE! You STILL have %d ammo(s)\n", Bullet);
                 else
-                    printf("[Younger] You press FIRE but you have NO ammo\n");
+                    printf("You press FIRE but you have NO ammo\n");
             }
 
             //玩家位置纠正

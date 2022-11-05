@@ -113,7 +113,7 @@ void InitGame(void)
 
     printf(" [Younger] You start a new game, good luck!\n");
 
-    srand(&seed); //初始化随机数队列
+    srand(Difficulty); //初始化随机数队列
 
     //初始化地图
     OLEDShowString(0, 0, "|    |    |    |");
@@ -135,6 +135,9 @@ void GameProcess(void)
     static i16 PlayerShowCounter = 0, EnemyMoveCounter = 0, RoadMoveCounter = 0;
     static i16 BulletAddCounter = 0, BulletEddectCounter = 0;
 
+    int NewSeed = MicroSec + Difficulty + PlayerLocation + LastPlayerLocation + EnemyLocation[0][1] + EnemyLocation[1][1] + EnemyLocation[2][1];
+    srand(NewSeed);
+
     int i;
 
     if (!PlayerCrashFlag) //没有被碰撞, 运行游戏进程相关代码
@@ -147,6 +150,7 @@ void GameProcess(void)
         DifficultyCounter++;
         if (DifficultyCounter > 1000)
         {
+            printf("Speed up!\n");
             Difficulty++;
             DifficultyCounter = 0;
         }

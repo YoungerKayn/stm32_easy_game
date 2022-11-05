@@ -109,7 +109,7 @@ I (..\App\OLED\OLEDFont.h)(0x63653F18)
 I (..\ARM\SysTick\SysTick.h)(0x5CE351E5)
 F (..\App\OLED\OLED.h)(0x6364B227)()
 F (..\App\OLED\OLEDFont.h)(0x63653F18)()
-F (..\App\Game\Game.c)(0x6365D5E0)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\App\Main -I ..\App\DataType -I ..\HW\RCC -I ..\HW\Timer -I ..\HW\UART1 -I ..\FW\inc -I ..\ARM\NVIC -I ..\ARM\SysTick -I ..\ARM\System -I ..\App\LED -I ..\App\OLED -I ..\App\RunClock -I ..\App\KeyOne -I ..\App\Game --diag_suppress=167,177-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\game.o --omf_browse .\objects\game.crf --depend .\objects\game.d)
+F (..\App\Game\Game.c)(0x636616BB)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\App\Main -I ..\App\DataType -I ..\HW\RCC -I ..\HW\Timer -I ..\HW\UART1 -I ..\FW\inc -I ..\ARM\NVIC -I ..\ARM\SysTick -I ..\ARM\System -I ..\App\LED -I ..\App\OLED -I ..\App\RunClock -I ..\App\KeyOne -I ..\App\Game --diag_suppress=167,177-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\game.o --omf_browse .\objects\game.crf --depend .\objects\game.d)
 I (..\ARM\System\stm32f10x_conf.h)(0x5CE3EAF2)
 I (..\FW\inc\stm32f10x_adc.h)(0x5A6556B6)
 I (..\ARM\System\stm32f10x.h)(0x5A6556B6)
@@ -130,10 +130,10 @@ I (..\FW\inc\misc.h)(0x5A6556B6)
 I (..\App\DataType\DataType.h)(0x5CE34DC6)
 I (..\App\OLED\OLED.h)(0x6364B227)
 I (..\App\Game\LEDNew.h)(0x6364FC3F)
-I (..\App\Game\Random.h)(0x6365020E)
+I (..\App\Game\Random.h)(0x63660EC5)
 I (D:\MCU\Keil5\ARM\ARMCC\include\stdio.h)(0x5E8E3CC2)
 F (..\App\Game\Game.h)(0x636503E8)()
-F (..\App\Game\KeyNew.c)(0x63654EA2)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\App\Main -I ..\App\DataType -I ..\HW\RCC -I ..\HW\Timer -I ..\HW\UART1 -I ..\FW\inc -I ..\ARM\NVIC -I ..\ARM\SysTick -I ..\ARM\System -I ..\App\LED -I ..\App\OLED -I ..\App\RunClock -I ..\App\KeyOne -I ..\App\Game --diag_suppress=167,177-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\keynew.o --omf_browse .\objects\keynew.crf --depend .\objects\keynew.d)
+F (..\App\Game\KeyNew.c)(0x63660C3D)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\App\Main -I ..\App\DataType -I ..\HW\RCC -I ..\HW\Timer -I ..\HW\UART1 -I ..\FW\inc -I ..\ARM\NVIC -I ..\ARM\SysTick -I ..\ARM\System -I ..\App\LED -I ..\App\OLED -I ..\App\RunClock -I ..\App\KeyOne -I ..\App\Game --diag_suppress=167,177-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\keynew.o --omf_browse .\objects\keynew.crf --depend .\objects\keynew.d)
 I (..\ARM\System\stm32f10x_conf.h)(0x5CE3EAF2)
 I (..\FW\inc\stm32f10x_adc.h)(0x5A6556B6)
 I (..\ARM\System\stm32f10x.h)(0x5A6556B6)
@@ -174,10 +174,10 @@ I (..\FW\inc\stm32f10x_tim.h)(0x5A6556B6)
 I (..\FW\inc\stm32f10x_usart.h)(0x5A6556B6)
 I (..\FW\inc\misc.h)(0x5A6556B6)
 F (..\App\Game\LEDNew.h)(0x6364FC3F)()
-F (..\App\Game\Random.c)(0x636503F1)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\App\Main -I ..\App\DataType -I ..\HW\RCC -I ..\HW\Timer -I ..\HW\UART1 -I ..\FW\inc -I ..\ARM\NVIC -I ..\ARM\SysTick -I ..\ARM\System -I ..\App\LED -I ..\App\OLED -I ..\App\RunClock -I ..\App\KeyOne -I ..\App\Game --diag_suppress=167,177-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\random.o --omf_browse .\objects\random.crf --depend .\objects\random.d)
+F (..\App\Game\Random.c)(0x63660E4C)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\App\Main -I ..\App\DataType -I ..\HW\RCC -I ..\HW\Timer -I ..\HW\UART1 -I ..\FW\inc -I ..\ARM\NVIC -I ..\ARM\SysTick -I ..\ARM\System -I ..\App\LED -I ..\App\OLED -I ..\App\RunClock -I ..\App\KeyOne -I ..\App\Game --diag_suppress=167,177-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\random.o --omf_browse .\objects\random.crf --depend .\objects\random.d)
 I (..\App\Game\Game.h)(0x636503E8)
 I (..\App\DataType\DataType.h)(0x5CE34DC6)
-F (..\App\Game\Random.h)(0x6365020E)()
+F (..\App\Game\Random.h)(0x63660EC5)()
 F (..\HW\RCC\RCC.c)(0x5CE35BAB)(--c99 -c --cpu Cortex-M3 -D__MICROLIB -g -O1 --apcs=interwork --split_sections -I ..\App\Main -I ..\App\DataType -I ..\HW\RCC -I ..\HW\Timer -I ..\HW\UART1 -I ..\FW\inc -I ..\ARM\NVIC -I ..\ARM\SysTick -I ..\ARM\System -I ..\App\LED -I ..\App\OLED -I ..\App\RunClock -I ..\App\KeyOne -I ..\App\Game --diag_suppress=167,177-IC:\Users\Administrator\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\2.4.0\Device\Include-D__UVISION_VERSION="537" -DSTM32F10X_HD -DSTM32F10X_HD -DUSE_STDPERIPH_DRIVER-o .\objects\rcc.o --omf_browse .\objects\rcc.crf --depend .\objects\rcc.d)
 I (..\HW\RCC\RCC.h)(0x5CE35B2E)
 I (..\App\DataType\DataType.h)(0x5CE34DC6)
