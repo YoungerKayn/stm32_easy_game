@@ -1,3 +1,3 @@
-Load "d:\\MCU\\KeilProject\\STM32\\STM32 exp5\\Project\\Objects\\STM32KeilPrj.axf" 
+Load "d:\\MCU\\KeilProject\\STM32\\STM32F103C8T6_Easy_Game\\Project\\Objects\\STM32KeilPrj.axf" 
 Erase Done.Programming Done.Verify OK.Application running ...
-Flash Load finished at 21:33:28
+Flash Load finished at 11:17:59

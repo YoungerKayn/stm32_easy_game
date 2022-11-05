@@ -50,20 +50,12 @@ static void Proc2msTask(void)
 {
     if (Get2msFlag()) //判断2ms标志状态
     {
-        MicroSec += 2;
+        MicroSec += 2;     //游戏时间
+        GameProcess();     //游戏进程
+        KeyCheck();        //按键输入检测
+        KeyFunction(); //独立按键检测及功能实现
+        OLEDRefreshGRAM(); //刷新OLED屏显示
 
-        GameProcess(); //游戏进程
-
-        if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_1) == 0)
-            PressKey = 1;
-        else if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_2) == 0)
-            PressKey = 2;
-        else if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0) == 0)
-            PressKey = 3;
-        else
-            PressKey = 0;
-
-        OLEDRefreshGRAM();
         Clr2msFlag();
     }
 }
@@ -86,10 +78,8 @@ int main(void)
 {
     InitHardware(); //初始化硬件相关函数
     InitGame();     //初始化游戏进程
-
     while (1)
     {
         Proc2msTask();
-        KeyFunction(); //独立按键检测及功能实现
     }
 }

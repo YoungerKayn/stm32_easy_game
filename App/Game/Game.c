@@ -220,8 +220,8 @@ void GameProcess(void)
                     EffectLocation = 127;
                     OLEDShowString(32, 0, "Score:");
                     OLEDShowString(80, 0, ScoreStr);
-                    OLEDShowString(24, 32, "Press RST");
-                    OLEDShowString(20, 48, "to restart");
+                    OLEDShowStringBySize12(24, 40, "Press RST");
+                    OLEDShowStringBySize12(20, 52, "to restart");
                 }
             EffectCounter = 0;
         }
@@ -244,39 +244,6 @@ void GameOverEffect(int EffectLocation, int FillFlag)
 /******************************************************************/
 
 /******************************************************************/
-/**
- * @brief 发射子弹摧毁玩家所在道路上的敌机
- *
- * @param PlayerLocation 玩家所在道路
- * @return int 发射成功返回1, 否则返回0
- */
-int PlayerFire(int PlayerLocation)
-{
-    if (Bullet > 0)
-    {
-        int i;
-
-        //发射动画1
-        for (i = 0; i < 48; i++)
-        {
-            OLEDDrawPointForMap(23 + PlayerLocation * 40, i, 1);
-            OLEDDrawPointForMap(24 + PlayerLocation * 40, i, 1);
-        }
-        OLEDRefreshGRAM();
-        EnemyLocation[PlayerLocation][0] = 0; //清零当前道路的敌机存在标志位
-        Bullet--;                             //子弹数减1
-        Delay_ms(100);
-        //发射动画2
-        for (i = 0; i < 64; i++)
-        {
-            OLEDDrawPointForMap(23 + PlayerLocation * 40, i, 0);
-            OLEDDrawPointForMap(24 + PlayerLocation * 40, i, 0);
-        }
-        return 1; //发射成功
-    }
-    else
-        return 0; //发射失败
-}
 
 /**
  * @brief 刷新玩家的显示
@@ -342,6 +309,40 @@ void PlayerMove(int PlayerLocation, int LastPlayerLocation)
     default:
         break;
     }
+}
+
+/**
+ * @brief 发射子弹摧毁玩家所在道路上的敌机
+ *
+ * @param PlayerLocation 玩家所在道路
+ * @return int 发射成功返回1, 否则返回0
+ */
+int PlayerFire(int PlayerLocation)
+{
+    if (Bullet > 0)
+    {
+        int i;
+
+        //发射动画1
+        for (i = 0; i < 48; i++)
+        {
+            OLEDDrawPointForMap(23 + PlayerLocation * 40, i, 1);
+            OLEDDrawPointForMap(24 + PlayerLocation * 40, i, 1);
+        }
+        OLEDRefreshGRAM();
+        EnemyLocation[PlayerLocation][0] = 0; //清零当前道路的敌机存在标志位
+        Bullet--;                             //子弹数减1
+        Delay_ms(100);
+        //发射动画2
+        for (i = 0; i < 64; i++)
+        {
+            OLEDDrawPointForMap(23 + PlayerLocation * 40, i, 0);
+            OLEDDrawPointForMap(24 + PlayerLocation * 40, i, 0);
+        }
+        return 1; //发射成功
+    }
+    else
+        return 0; //发射失败
 }
 
 /**

@@ -33,6 +33,18 @@ void KeyInit(void)
     GPIO_Init(GPIOA, &GPIO_InitStructure);        //根据参数初始化GPIO
 }
 
+void KeyCheck(void)
+{
+    if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_1) == 0)
+            PressKey = 1;
+        else if (GPIO_ReadInputDataBit(GPIOC, GPIO_Pin_2) == 0)
+            PressKey = 2;
+        else if (GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_0) == 0)
+            PressKey = 3;
+        else
+            PressKey = 0;
+}
+
 /**
  * @brief 按键按下弹起检测及按键功能定义
  *
