@@ -173,13 +173,14 @@ void GameProcess(void)
         }
 
         //随机出现一路敌人
-        int EnemyAttack = rand() % 500;
+				int AttackProbility = 499; //敌人不出现的可能性
+        int EnemyAttack = rand() % AttackProbility;
         if (EnemyAttack < 3)
             EnemyLocation[EnemyAttack][0] = 1;
 
         //敌人前进
         EnemyMoveCounter += 2 * Difficulty;
-        if (EnemyMoveCounter > SpeedLevel)
+        while (EnemyMoveCounter > SpeedLevel)
         {
             for (i = 0; i < 3; i++)
                 if (EnemyLocation[i][0])
@@ -189,7 +190,7 @@ void GameProcess(void)
                 PlayerCrashFlag = 1;
                 PlayerCrash(PlayerLocation);
             }
-            EnemyMoveCounter = 0;
+            EnemyMoveCounter -= SpeedLevel;
         }
 
         //动态地图绘制
