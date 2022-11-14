@@ -53,7 +53,7 @@ static void Proc2msTask(void)
         MicroSec += 2;     //游戏时间
         GameProcess();     //游戏进程
         KeyCheck();        //按键输入检测
-        KeyFunction(); //独立按键检测及功能实现
+        KeyFunction();     //独立按键检测及功能实现
         OLEDRefreshGRAM(); //刷新OLED屏显示
 
         Clr2msFlag();
