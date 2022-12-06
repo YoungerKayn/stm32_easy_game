@@ -3,6 +3,7 @@
 #include "OLED.h"
 #include "LEDNew.h"
 #include "Random.h"
+#include "Timer.h"
 #include <stdio.h>
 
 #define SpeedLevel 10 //游戏速度等级, 越小游戏越快
@@ -227,6 +228,7 @@ void GameProcess(void)
                     OLEDShowString(80, 0, ScoreStr);
                     OLEDShowStringBySize12(24, 40, "Press RST");
                     OLEDShowStringBySize12(20, 52, "to restart");
+                    StopTimers();
                 }
             EffectCounter = 0;
         }

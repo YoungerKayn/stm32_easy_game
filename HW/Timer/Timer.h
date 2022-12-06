@@ -33,6 +33,7 @@
 *                                              API函数声明
 *********************************************************************************************************/
 void  InitTimer(void);      //初始化Timer模块
+void  StopTimers(void);     //停止所有定时器
 
 u8    Get2msFlag(void);     //获取2ms标志位的值
 void  Clr2msFlag(void);     //清除2ms标志位
