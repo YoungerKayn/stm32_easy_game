@@ -8,4 +8,4 @@
 2. 开火：独立按键中的2键可以开火，清除玩家所在道路上的敌机
 3. 重置：玩家死亡后，通过复位键RST重置游戏
 
-## [演示](http://pan.lemyueng.ga/s/PMtV)
+## [点此可观看演示视频](http://pan.lemyueng.ga/s/PMtV)
